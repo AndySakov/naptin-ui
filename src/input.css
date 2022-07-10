@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply h-10 min-w-fit w-auto mx-2 my-3 py-2 px-6 bg-primary-900 text-white rounded-md font-normal text-center transition-colors ease-in-out duration-150;
+  }
+
+  .btn:hover {
+    @apply bg-primary-800;
+  }
+
+  .btn:focus-within {
+    @apply ring-2 ring-primary-700 ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn;
+  }
+
+  .btn-primary:hover {
+    @apply bg-primary-700;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-700;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-secondary-800;
+  }
+
+  .btn-secondary:focus-within {
+    @apply ring-2 ring-primary-700 ring-offset-2;
+  }
+
+  .btn-tertiary {
+    @apply bg-gray-300 text-black;
+  }
+
+  .btn-tertiary:hover {
+    @apply bg-primary-600 text-white;
+  }
+
+  .btn-tertiary:focus-within {
+    @apply ring-2 ring-primary-500 ring-offset-2;
+  }
+}
