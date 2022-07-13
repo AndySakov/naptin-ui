@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply h-10 min-w-fit w-auto mx-2 my-3 py-2 px-6 bg-primary-900 text-white rounded-md font-normal text-center transition-colors ease-in-out duration-150;
+    @apply h-10 min-w-fit w-auto mx-2 my-3 py-2 px-6 bg-primary-900 text-white rounded-md font-normal text-center transition-colors duration-[50];
   }
 
   .btn:hover {
@@ -46,4 +46,33 @@
   .btn-tertiary:focus-within {
     @apply ring-2 ring-primary-500 ring-offset-2;
   }
+
+  .btn-white {
+    @apply bg-white text-black;
+  }
+
+  .btn-white:hover {
+    @apply bg-primary-100;
+  }
+
+  .btn-white:focus-within {
+    @apply ring-0 ring-transparent;
+  }
+
+  .btn-group {
+    @apply flex flex-wrap flex-row justify-center items-center w-auto border-0 p-0 shadow-sm;
+  }
+
+  .btn-group .btn {
+    @apply m-0 border-2;
+  }
+
+  .table-col-head {
+    @apply text-sm font-medium text-gray-900 px-6 py-4 text-left uppercase;
+  }
+
+  .table-col-body {
+    @apply text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap;
+  }
+  
 }
