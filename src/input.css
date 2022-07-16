@@ -74,5 +74,46 @@
   .table-col-body {
     @apply text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap;
   }
-  
+}
+
+.select__menu {
+  @apply z-[100000] absolute;
+}
+
+.select__control {
+  border-color: none !important;
+  width: 100% !important;
+  @apply !text-gray-500 !font-light !bg-gray-100 rounded-lg cursor-pointer !border-transparent;
+}
+
+.select__control:hover {
+  @apply !border-transparent !shadow-sm;
+}
+
+.select__control:focus {
+  @apply !border-transparent !shadow-md;
+}
+
+.select__control.select__control--is-focused {
+  @apply !border-transparent !shadow-md;
+}
+
+.select__control.select__control--is-focused.select__control--menu-is-open {
+  @apply !border-transparent !shadow-md;
+}
+
+.select__option {
+  @apply h-max hover:bg-secondary-600 transition-colors !duration-[50];
+}
+
+.select__option.select__option--is-selected {
+  @apply bg-secondary-600 text-white;
+}
+
+.select__option.select__option--is-focused {
+  @apply bg-secondary-500 text-white;
+}
+
+.select__indicator-separator {
+  @apply !hidden;
 }

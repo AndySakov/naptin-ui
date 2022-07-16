@@ -8,7 +8,7 @@ const DataTable = ({
   return (
     <div className="flex w-full border border-slate-300 shadow-sm rounded-lg max-h-[40rem] overflow-y-scroll">
       <table className="table-auto w-full max-h-[40rem] overflow-y-scroll">
-        <thead className="bg-white sticky top-0 shadow-sm shadow-primary-200 z-10">
+        <thead className="bg-white shadow-sm shadow-primary-200">
           <tr>
             {serials ? (
               <th scope="col" className="table-col-head">
